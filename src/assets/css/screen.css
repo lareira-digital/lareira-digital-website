@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Sen";
+    src: url('../font/Sen-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+@font-face {
+    font-family: "Sen";
+    src: url('../font/Sen-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+@font-face {
+    font-family: "Sen";
+    src: url('../font/Sen-ExtraBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 800;
+}
+
+body,
+html {
+    background: #efefef;
+    color: #000;
+    font-family: "Sen", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Sen", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #3e3e3e;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #3e3e3e;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #efefef;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #16635aff;
+}
+
+h4 {
+    color: #fefefe;
+    font-weight: 700;
+}
+
+p {
+    font-family: "Sen", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/* UIKIT MODS */
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #efefef;
+}
+
+.uk-navbar-item,
+.uk-navbar-nav>li>a,
+.uk-navbar-toggle {
+    justify-content: right;
+    margin-right: 20px;
+}
+
+.uk-grid-divider> :not(.uk-first-column)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid #bcbcbc;
+}
+
+/* CUSTOM STUFF */
+.headerlogo {
+    width: 50px;
+    height: 50px;
+}
+
+.cardsection-title {
+    text-align: center;
+}
+
+.footer {
+    background: #1a1a1a;
+    color: #fafafa;
+    padding: 60px 50px 30px 60px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.footericon {
+    padding: 15px;
+}
+
+.topradius {
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-topright: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}

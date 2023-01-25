@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<!-- 
+Hi fellow coder! We're happy that you're interested in this wesite,
+feel free to visit us on our GitHub page https://github.com/lareira-digital
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lareira Digital</title>
+    <meta name="description" content="Lareira Digital is a software development company focused on open source and open standards.">
+    <meta name="author" content="Lareira Digital">
+    <meta property="og:title" content="Lareira Digital">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lareira.digital/">
+    <meta property="og:description" content="Lareira Digital is a software development company focused on open source and open standards.">
+    <meta property="og:image" content="assets/img/logo.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="assets/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/screen.css">
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <!-- Desktop navigation -->
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-center uk-visible@s">
+            <div class="uk-navbar-center-left">
+                <ul class="uk-navbar-nav">
+                    <li><a href="software/">SOFTWARE</a></li>
+                    <li><a href="games/">VIDEOGAMES</a></li>
+                    <li><a href="services/">SERVICES</a></li>
+                </ul>
+            </div>
+            <a class="uk-navbar-item uk-logo" href="#"><img class="headerlogo" src="assets/img/logo.png"></a>
+            <div class="uk-navbar-center-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="news/">NEWS</a></li>
+                    <li><a href="jobs/">JOBS</a></li>
+                    <li><a href="about/">ABOUT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile navigation -->
+    <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav">
+                <li><a href="software/">SOFTWARE</a></li>
+                <li><a href="games/">VIDEOGAMES</a></li>
+                <li><a href="services/">SERVICES</a></li>
+                <li><a href="news/">NEWS</a></li>
+                <li><a href="jobs/">JOBS</a></li>
+                <li><a href="about/">ABOUT US</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="uk-hidden@s">
+        <img class="headerlogo" style="float:left;margin:15px" src="assets/img/logo.png">
+    </div>
+    <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon></a>
+    <!-- Hero -->
+    <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="assets/img/header_bg.jpg" uk-img="loading: eager" style="filter:grayscale(1)">
+        <h1>Open Source Consultancy</h1>
+    </div>
+    <!-- Cards -->
+    <!-- Services -->
+    <div class="uk-container uk-container-expand" style=" background: #fff;padding:40px;margin-bottom:0px;">
+        <h2 class="cardsection-title">Services</h3>
+            <div class="uk-child-width-1-5@s uk-text-center uk-grid-divider uk-grid-match uk-flex-center" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-body">
+                        <h3 class="uk-card-title">Software development</h3>
+                        <p>Wether you need <b>custom software development</b> for your needs or <b>maintaining/optimizing existing software</b>, Lareira can help you.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-body">
+                        <h3 class="uk-card-title">IT support</h3>
+                        <p>Do you need to support your current office's infrastructure, comnputers and networks? We have plently of experience for small and mid sized companies and can support it with no issue.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-body">
+                        <h3 class="uk-card-title">Training</h3>
+                        <p>Over the years we have accumulated software, networking and cloud knowledge. If you need training for your teams in Kubernetes, Gitlab, Jira, Cloud Technologies or GNU/Linux we have you covered.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- News -->
+    <div class="uk-container uk-container-expand uk-margin">
+        <h2 class="cardsection-title">News</h3>
+            <div class="uk-child-width-1-5@s uk-grid-match uk-flex-center" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover topradius">
+                        <div class="uk-card-media-top">
+                            <img class="topradius" src="assets/img/news/hobbypont.png" width="1800" height="1200" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Lareira at Global Game Jam 2023</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover topradius">
+                        <div class="uk-card-media-top">
+                            <img class="topradius" src="assets/img/news/hapimag_logo.jpg" width="1800" height="1200" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Helping Hapimag build their future</h3>
+                            <p>We ahve been hired by Hapimag AG to help them expand their vision of holidays into the next generation of people with major changes to their infrastructure as well as their software in general.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-hover topradius">
+                        <div class="uk-card-media-top">
+                            <img class="topradius" src="assets/img/news/sentinel.jpg" width="1800" height="1200" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Software accountability</h3>
+                            <p>Our sentinel project brings accountability to audit and action tracing in software services with immutable encrypted records.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- Footer -->
+    <div class="uk-container uk-container-expand footer">
+        <div class="uk-text-left uk-child-width-expand@s" uk-grid>
+            <div class="uk-card uk-visible@s uk-width-1-2 uk-card-body"><img src="assets/img/full_logo_white_alpha.png"></div>
+            <div class="uk-card uk-visible@s uk-width-1-6 uk-card-body">
+                <h4>website</h4>
+                <a href="software/">SOFTWARE</a><br>
+                <a href="games/">VIDEOGAMES</a><br>
+                <a href="services/">SERVICES</a><br>
+                <a href="news/">NEWS</a><br>
+                <a href="jobs/">JOBS</a><br>
+                <a href="about/">ABOUT US</a><br>
+            </div>
+            <div class="uk-card uk-width-1-6@s uk-width-expand uk-card-body">
+                <h4>Lareira Digital &copy; 2023</h4>
+                <a href="conduct.html">Code of Conduct</a><br>
+                <a href="legal.html">Legal Terms</a><br>
+                <a href="press.html">Press</a><br>
+                <a href="privacy.html">Privacy Policy</a><br>
+                <a href="funding.html">Public Funding</a><br>
+            </div>
+            <div class="uk-card uk-width-1-6@s uk-width-expand uk-card-body">
+                <h4>Headquarters</h4>
+                <address>
+                    Camiño do Cereiro 20<br>
+                    36995 Poio, Pontevedra<br>
+                    Galicia (Spain)<br>
+                    +34 682 702 330<br>
+                    <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006c\u0061\u0072\u0065\u0069\u0072\u0061\u002e\u0064\u0069\u0067\u0069\u0074\u0061\u006c';void 0">info{at}lareira.digital</a><br>
+                    <a href="https://github.com/lareira-digital" class="footericon" uk-icon="icon:github;ratio:1.5"></a><a href="https://twitter.com/lareiradigital" class="footericon" uk-icon="icon:twitter;ratio:1.5"></a><a href="https://matrix.to/#/#lareira-digispace:matrix.org" class="footericon"><img src="assets/img/Matrix_icon.svg.png"></a>
+                </address>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "lareira-digital-website"
+version = "0.1.0"
+description = ""
+authors = ["Oscar Carballal Prego <oscar@lareira.digital>"]
+readme = "README.md"
+packages = [{include = "lareira_digital_website"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.1.5"
+black = "^22.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
