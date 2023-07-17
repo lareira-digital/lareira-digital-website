@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "lareira-website"
+version = "0.1.0"
+description = ""
+authors = ["Oscar Carballal Prego <oscar@lareira.digital>"]
+license = "Unlicense"
+readme = "README.md"
+packages = [{include = "lareira_website"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+staticjinja = "^4.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
