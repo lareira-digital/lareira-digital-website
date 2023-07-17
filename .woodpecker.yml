@@ -2,7 +2,8 @@ pipeline:
   build:
     image: alpine:latest
     commands:
-      - apk add --no-cache make
+      - apk add --no-cache make poetry
+      - poetry install
       - make build
   publish:
     image: alpine:latest
