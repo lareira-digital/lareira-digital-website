@@ -4,6 +4,7 @@ pipeline:
     commands:
       - apk add --no-cache make poetry
       - poetry install
+      - echo "ls"
       - make build
   publish:
     image: alpine:latest
