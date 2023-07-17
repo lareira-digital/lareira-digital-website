@@ -28,6 +28,12 @@ strong {
     font-weight: 600;
 }
 
+i,
+em,
+cite {
+    font-style: italic;
+}
+
 p {
     color: #483949;
 }
