@@ -1,4 +1,5 @@
 # lareira-website
+![CI](https://ci.codeberg.org/api/badges/12465/status.svg)
 
 Main website for Lareira Digital.
 
