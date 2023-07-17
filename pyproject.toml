@@ -5,7 +5,6 @@ description = ""
 authors = ["Oscar Carballal Prego <oscar@lareira.digital>"]
 license = "Unlicense"
 readme = "README.md"
-packages = [{include = "lareira_website"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
