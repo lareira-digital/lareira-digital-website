@@ -2,7 +2,7 @@ pipeline:
   build:
     image: alpine:latest
     commands:
-      - apk add --no-cache make python-pip
+      - apk add --no-cache make python3 python3-dev py3-pip
       - pip install staticjinja
       - make build
   publish:
