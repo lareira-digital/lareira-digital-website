@@ -1,0 +1,32 @@
+{% extends "_base.html" %}
+{% block content %}
+<div class="container-fluid bluebg">
+    <div class="container-fluid">
+        <a href="/index.html"><img src="/static/img/lareira-logo.png" class="logo" /></a>
+    </div>
+    <div class="container-fluid">
+        <h1 class="hello">Lareira Digital / <strong>Press Kit</strong></h1>
+        <h2 class="shortdesc">Our brochure and logo</h2>
+    </div>
+</div>
+<div class="container-fluid maincontent">
+    <div class="container">
+        <div class="grid">
+            <a href="/downloads/brochure.pdf" class="nimble">
+                <article class="card">
+                    <header class="card-header"><img src="/static/img/brochure.png" /></header>
+                    <strong>Our brochure</strong><br>
+                    All the information you need to know about Lareira Digital. Foundation, history, people, what did we do along the way, how we try to push for local economy while striving for international business...
+                </article>
+            </a>
+            <a href="/downloads/20230716-lareiradigital-presskit.zip" class="nimble">
+                <article class="card">
+                    <header class="card-header"><img src="/static/img/id.png" /></header>
+                    <strong>Our logo</strong><br>
+                    A .zip file with all the logo variants that you can use for any document. Please note that variants not included in this file are not accepted by our style guide and won't be recognized as Lareira Digital logo.
+                </article>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
