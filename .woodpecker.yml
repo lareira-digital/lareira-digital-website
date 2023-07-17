@@ -2,7 +2,7 @@ pipeline:
   build:
     image: alpine:latest
     commands:
-      - apk add --no-cache make poetry
+      - apk add --no-cache make python-pip
       - pip install staticjinja
       - make build
   publish:
