@@ -1,0 +1,9 @@
+pipeline:
+  build:
+    image: debian
+    commands:
+      - make build
+  publish:
+    image: debian
+    commands:
+      - echo "Testing.."
