@@ -1,9 +1,10 @@
 pipeline:
   build:
-    image: debian
+    image: alpine:latest
     commands:
+      - apk add --no-cache make
       - make build
   publish:
-    image: debian
+    image: alpine:latest
     commands:
       - echo "Testing.."
