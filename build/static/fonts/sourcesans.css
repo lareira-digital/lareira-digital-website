@@ -1,0 +1,119 @@
+/* Source Sans Pro ExtraLight */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-ExtraLight.ttf") format("truetype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 200;
+    font-stretch: normal;
+}
+
+/* Source Sans Pro ExtraLight Italic */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-ExtraLightItalic.ttf") format("truetype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 200;
+    font-stretch: normal;
+}
+
+/* Source Sans Pro Light */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-Light.ttf") format("truetype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+}
+
+/* Source Sans Pro Light Italic */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-LightItalic.ttf") format("truetype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: normal;
+}
+
+/* Source Sans Pro Regular */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+/* Source Sans Pro Regular Italic */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-Italic.ttf") format("truetype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+/* Source Sans Pro Semibold */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-Semibold.ttf") format("truetype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: normal;
+}
+
+/* Source Sans Pro Semibold Italic */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-SemiboldItalic.ttf") format("truetype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 600;
+    font-stretch: normal;
+}
+
+/* Source Sans Pro Bold */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-Bold.ttf") format("truetype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: normal;
+}
+
+/* Source Sans Pro Bold Italic */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-BoldItalic.ttf") format("truetype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 700;
+    font-stretch: normal;
+}
+
+/* Source Sans Pro Black */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-Black.ttf") format("truetype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 900;
+    font-stretch: normal;
+}
+
+/* Source Sans Pro Black Italic */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-BlackItalic.ttf") format("truetype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 900;
+    font-stretch: normal;
+}
