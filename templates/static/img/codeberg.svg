@@ -6,7 +6,7 @@
    version="1.1"
    id="svg1468"
    sodipodi:docname="codeberg.svg"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    inkscape:export-filename="/home/robert/Documents/Codeberg/Logo-Kit/svg/Codeberg-favicon_64px.png"
    inkscape:export-xdpi="384"
    inkscape:export-ydpi="384"
@@ -79,8 +79,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="22.627417"
-     inkscape:cx="6.7175144"
-     inkscape:cy="16.99266"
+     inkscape:cx="6.6733202"
+     inkscape:cy="17.014757"
      inkscape:document-units="px"
      inkscape:current-layer="svg1468"
      inkscape:document-rotation="0"
@@ -103,7 +103,13 @@
      inkscape:showpageshadow="0">
     <inkscape:grid
        type="xygrid"
-       id="grid2067" />
+       id="grid2067"
+       originx="0"
+       originy="0"
+       spacingy="1"
+       spacingx="1"
+       units="px"
+       visible="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata1465">
@@ -147,7 +153,7 @@
   </metadata>
   <path
      id="path360787"
-     style="fill:#999999;fill-opacity:1;stroke-width:1.56045;paint-order:markers fill stroke;stop-color:#000000"
+     style="fill:#000000;fill-opacity:1;stroke-width:1.56045;paint-order:markers fill stroke;stop-color:#000000"
      d="m 2.1201574,0.11493246 c -1.16904387,0 -2.1166667,0.94766874 -2.1166667,2.11667584 0,0.3976492 0.1119492,0.7872693 0.3231846,1.124209 L 2.0914359,1.0742916 c 0.012663,-0.01648 0.044596,-0.01648 0.057259,0 L 3.9135476,3.3559091 C 4.124783,3.018951 4.236824,2.6292942 4.236824,2.2316083 c 0,-1.1690071 -0.9476228,-2.11667584 -2.1166666,-2.11667584 z"
      sodipodi:nodetypes="sccccccs"
      inkscape:label="sky" />

@@ -1,76 +1,21 @@
 {% extends "_base.html" %}
 {% block content %}
-<!-- <div class="langsel">
-    <a href="/" data-tooltip="English" data-placement="bottom"><img src="/static/img/lang_en-US.png"></a>
-    <a href="/es" data-tooltip="Spanish" data-placement="bottom"><img src="/static/img/lang_es-ES.png"></a>
-    <a href="/gl" data-tooltip="Galician" data-placement="bottom"><img src="/static/img/lang_gl-GL.png"></a>
-    <a href="/ch" data-tooltip="Swiss German" data-placement="left"><img src="/static/img/lang_de-CH.png"></a>
-</div> -->
-<div class="container-fluid bluebg">
-    <div class="container-fluid">
-        <a href="#"><img src="/static/img/lareira-logo.png" class="logo" /></a>
-    </div>
-    <div class="container-fluid">
-        <h1 class="hello">Hi. You're looking at <strong>Lareira Digital</strong></h1>
-        <h2 class="shortdesc">We are an open source software consultancy, among other things.</h2>
+<div class="grid" style="margin-top:75px;">
+    <div></div>
+    <div id="logo"><img src="/static/img/lareira-logo.png" class="reversible logo" /></div>
+    <div></div>
+</div>
+<div class="grid">
+    <div>
+        <h1 style="text-align: center;font-size: 3.5rem;padding-top:30px;line-height: 3.5rem;"><span class="text-light">Hi! You're looking at</span> <strong>Lareira Digital</strong></h1>
     </div>
 </div>
-<div class="container-fluid maincontent">
-    <div class="container">
-        <h2 class="wedo">Some of the things we do</h2>
-        <div class="grid">
-            <div>Software Development</div>
-            <div>Software R&D</div>
-            <div>IoT Development</div>
-            <div>Linux training</div>
-            <div>Videogame development</div>
-        </div>
-    </div>
-    <div class="container">
-        <h2 class="wedo">Some of the things we are doing</h2>
-        <div class="grid">
-            <div>Sentinel</div>
-            <div>AVOA</div>
-            <div>Atuin</div>
-            <div>Videogame workshops</div>
-        </div>
-    </div>
-    <div class="container">
-        <h2 class="wedo">What is going on</h2>
-        <div class="grid">
-            <article class="tpr">
-                <header class="tpr"><img class="tpr" src="/static/img/news/teaching.jpg" width="1800" height="1200" alt=""></header>
-                <span class="post-date">2023-07-16</span>
-                <h3>Godot 4.x course</h3>
-                As part of our ongoing efforts to promote the videogame industry, we will impart a course on Godot 4.x for those who are interested with the sight set on some events on 2023 and the Global Game Jam 2024.
-            </article>
-            <article class="tpr">
-                <header class="tpr"><img class="tpr" src="/static/img/news/mastodon-codeberg.png" width="1800" height="1200" alt=""></header>
-                <span class="post-date">2023-07-16</span>
-                <h3>Fediverse and Codeberg</h3>
-                We've taken some time and finally created Lareira's Mastodon account as well as migrated the code to Codeberg, which aligns better with our mission statement.
-            </article>
-        </div>
-        <div class="grid">
-            <article class="tpr">
-                <header class="topradius"><img class="tpr" src="/static/img/news/pontup.jpg" width="1800" height="1200" alt=""></header>
-                <span class="post-date">2023-07-14</span>
-                <h3>Pont-Up Startup Fair 2023</h3>
-                We've been accepted into the Pont-Up startup fair of Pontevedra. We're humbled by this opportunity and will make the most of it! Feel free to come visit, it will be worth it!
-            </article>
-            <article class="tpr">
-                <header class="tpr"><img class="tpr" src="/static/img/news/hobbypont.png" width="1800" height="1200" alt=""></header>
-                <span class="post-date">2023-01-10</span>
-                <h3>Sponsoring GGJ 2023</h3>
-                We're proud to be able to sponsor the Global Game Jam 2023 site in Pontevedra. As part of the commitment to reinvest part of our revenue in local STEM development, we might have a bit more fun than anticipated!
-            </article>
-            <article class="tpr">
-                <header class="tpr"><img class="tpr" src="/static/img/news/hapimag_logo.jpg" width="1800" height="1200" alt=""></header>
-                <span class="post-date">2022-06-01</span>
-                <h3>Helping Hapimag build their future</h3>
-                We have been hired by Hapimag AG to help them expand their vision of holidays into the next generation of people with major changes to their infrastructure as well as their software in general.
-            </article>
-        </div>
+<div class="grid">
+    <div>
+        <h3 style="text-align: center;">An open source software consultancy, among other things.</h3>
     </div>
 </div>
+<script>
+    setActiveMenu(document.querySelector('a#home'));
+</script>
 {% endblock %}

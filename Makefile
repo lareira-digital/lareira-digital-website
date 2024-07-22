@@ -1,7 +1,10 @@
-.PHONY: build run
+.PHONY: build watch run
 
 build:
 	staticjinja build --outpath build --static static,downloads
+
+watch:
+	staticjinja watch --outpath build --static static,downloads
 
 run:
 	python -m http.server --directory build
