@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" data-theme="light" style="min-height:100%;position:relative;">
+<!-- Hi curious person! We're happy that you're interested in this website -->
+<!-- feel free to visit us on our Codeberg page: https://codeberg.org/lareira-digital -->
+<!-- where you can also find the source code for this site. -->
+
+<head>
+    <meta charset=" utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lareira Digital</title>
+    <meta name="description" content="Lareira Digital is a software development company focused on open source and open standards.">
+    <meta name="author" content="Lareira Digital">
+    <meta property="og:title" content="Lareira Digital">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lareira.digital/">
+    <meta property="og:description" content="Lareira Digital is a software development company focused on open source and open standards.">
+    <meta property="og:image" content="/static/img/lareira-logo.png">
+    <link rel="icon" type="image/png" href="/static/img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/fonts/sourcesans.css">
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/pico.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/app.js" async></script>
+</head>
+
+<body>
+
+
+    
+    <main class="container">
+        <nav class="container">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon" style="font-size: 2.8em">&#x2261;</span>
+            </label>
+            <!-- <ul>
+                <li></li>
+            </ul> -->
+            <ul id="menuitems">
+                <li><a id="home" href="/">home</a></li>
+                <li><a id="services" href="/pages/services.html">services</a></li>
+                <li><a id="news" href="/pages/news.html">news</a></li>
+                <li><a id="about" href="/pages/about.html">about</a></li>
+                <li><a id="kit-digital" href="/pages/kit-digital.html">kit digital</a></li>
+                <!-- <li>
+                    <details role="list" dir="rtl">
+                        <summary aria-haspopup="listbox" role="link"><img src="/static/img/lang_en-US.png"></summary>
+                        <ul role="listbox">
+                            <li><a><img class="flag" src="/static/img/lang_en-US.png">English</a></li>
+                            <li><a><img class="flag" src="/static/img/lang_es-ES.png">Español</a></li>
+                            <li><a><img class="flag" src="/static/img/lang_gl-GL.png">Galego</a></li>
+                            <li><a><img class="flag" src="/static/img/lang_de-CH.png">Swiss</a></li>
+                        </ul>
+                    </details>
+                </li> -->
+                <li><button class="theme-switcher" data-tooltip="Turn on dark mode" data-placement="bottom" onclick="toggle(this)">🌓</button></li>
+            </ul>
+        </nav>
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="container-fluid">
+        <div class="grid footer">
+            <div>
+                <strong>//</strong>
+                <span data-tooltip="It's healthier for you :)">Say no to cookies!</span>
+                <strong>//</strong>
+                <a id="about" href="/pages/press.html">Press</a>
+                <strong>//</strong>
+                <a id="about" href="/pages/contributions.html">Contributions</a>
+                <!-- <strong>//</strong>
+                <a id="about" href="/pages/funding.html">Funding</a> -->
+            </div>
+            <div id="social" style="text-align: center;">
+                <a href="https://codeberg.org/lareira-digital" target="_blank" data-tooltip="Codeberg" data-placement="top">
+                    <img src="/static/img/codeberg.svg" class="reversible footericon" />
+                </a>
+                <a href="https://twitter.com/lareiradigital" target="_blank" data-tooltip="X (Twitter)" data-placement="top">
+                    <img src="/static/img/twitter.svg" class="reversible footericon" />
+                </a>
+                <a href="https://floss.social/@lareiradigital" target="_blank" data-tooltip="Mastodon" data-placement="top">
+                    <img src="/static/img/mastodon.svg" class="reversible footericon" />
+                </a>
+                <a href="https://matrix.to/#/#lareira-digispace:matrix.org" target="_blank" data-tooltip="matrix.org" data-placement="top">
+                    <img src="/static/img/matrix.svg" class="reversible footericon" />
+                </a>
+                <!-- <a href="https://youtube.com" target="_blank" data-tooltip="YouTube" data-placement="top">
+                    <img src="/static/img/youtube.svg" class="reversible footericon" />
+                </a>
+                <a href="https://instagram.com" target="_blank" data-tooltip="Instagram" data-placement="top">
+                    <img src="/static/img/instagram.svg" class="reversible footericon" />
+                </a> -->
+            </div>
+            <div style="text-align:right;">
+                <a class="contrast" data-target="modal-simple" onClick="toggleModal(event)">why so simple? ❤️</a>
+            </div>
+        </div>
+    </footer>
+    <dialog id="modal-simple">
+        <article>
+            <a href="#close" aria-label="Close" class="close" data-target="modal-simple" onClick="toggleModal(event)">
+            </a>
+            <h3>Things should be simple</h3>
+            <p>
+                We've been suffering a lot of overengineering in the tech space
+                for the past few years. You could say <i>"always"</i>, since it's
+                an inherent problem of our trade. This website is a statement
+                to rethink web development overall. CSS, HTML and other base
+                technologies have gotten really good but instead we are bloating
+                everything with <strong>tens of megabytes and thousands of dependencies</strong>
+                just to shave a few minutes of development, or, in some situations
+                <i>increase even more</i> the development time because you have
+                to learn that library/framework. We are becoming tool users
+                rather than creators of the tools.
+            </p>
+            <p>
+                Please, for the sanity of the future, think twice before adding
+                things you don't need to your software. We've been gifted with a
+                wondrous brain, let's use it wisely.
+            </p>
+        </article>
+    </dialog>
+</body>
+
+</html>

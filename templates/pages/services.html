@@ -1,28 +1,34 @@
 {% extends "_base.html" %}
 {% block content %}
-<div class="container-fluid bluebg">
-    <!-- <div class="container-fluid">
-        <a href="/index.html"><img src="/static/img/lareira-logo.png" class="logo" /></a>
-    </div> -->
-    <div class="container-fluid">
-        <h1 class="hello">Lareira Digital / <strong>Services</strong></h1>
-        <h2 class="shortdesc">What can Lareira Digital offer you?</h2>
-    </div>
+<div class="hero">
+    <section class="banner">
+        <header>
+            <h3>Services</h3>
+            <p>What services do we offer</p>
+        </header>
+    </section>
 </div>
-<div class="container-fluid maincontent">
+<div class="container">
     <div class="grid">
         <div>
-            <h6>Software consultancy</h6>
-            <p>We help you determine the best solutions for your company needs</p>
+            <h3>Solution design</h3>
+            <p>We will help you design the best solution for your needs, we have a team with experience in many areas of software and hardware development that can talk with you</p>
         </div>
+        <div style="margin:auto;"><img class="serviceimage" src="/static/img/services_design.png" /></div>
+    </div>
+    <div class="grid">
+        <div style="margin:auto;"><img class="serviceimage" src="/static/img/services_development.png" /></div>
         <div>
-            <h6>Software development</h6>
-            <p>We have the capabilities to develop custom software tailored to your needs</p>
+            <h3>Software development</h3>
+            <p>Some of us have over 20 years of experience developing software in multiple sectors, so we can help you build your solution with the best quality, following industry standards.</p>
         </div>
+    </div>
+    <div class="grid">
         <div>
-            <h6>Software consultancy</h6>
-            <p>We help you determine the best solutions for your company needs</p>
+            <h3>Infrastructure and operations</h3>
+            <p>Software services without a proper infraes</p>
         </div>
+        <div style="margin:auto;"><img class="serviceimage" src="/static/img/services_devops.png" /></div>
     </div>
     <h3>Our expertise</h3>
     <div class="grid">
@@ -45,9 +51,9 @@
         <div>Automation</div>
         <div>*Nix systems</div>
         <div>*BSD systems</div>
-        <div>test</div>
-        <div>ESP32</div>
-        <div>RPi2040</div>
+        <div>Embedded</div>
+        <div>Neo4J</div>
+        <div>MongoDB</div>
     </div>
 </div>
 {% endblock %}

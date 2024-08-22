@@ -1,21 +1,77 @@
 {% extends "_base.html" %}
 {% block content %}
-<div class="grid" style="margin-top:75px;">
-    <div></div>
-    <div id="logo"><img src="/static/img/lareira-logo.png" class="reversible logo" /></div>
-    <div></div>
+<div class="hero">
+    <section class="banner">
+        <header>
+            <h3>Hi! We are Lareira Digital</h3>
+            <p>An open source software consultancy, among other things.</p>
+        </header>
+    </section>
 </div>
-<div class="grid">
-    <div>
-        <h1 style="text-align: center;font-size: 3.5rem;padding-top:30px;line-height: 3.5rem;"><span class="text-light">Hi! You're looking at</span> <strong>Lareira Digital</strong></h1>
+<div class="container services">
+    <div class="grid">
+        <div class="service">
+            <i class="icon-codeopen bgred"></i>
+            <h3>Software development</h3>
+            <p>We develop custom solutions tailored to your needs</p>
+        </div>
+        <div class="service">
+            <i class="icon-cube bggreen"></i>
+            <h3>DevSecOps</h3>
+            <p>Cloud Infrastructure, AWS, GCE, Kubernetes, Docker, Linux, BSD...</p>
+        </div>
+        <div class="service">
+            <i class="icon-cubes bgblack"></i>
+            <h3>IoT</h3>
+            <p>Development of custom IoT solutions: ESP32, RPi2040, automation...</p>
+        </div>
+    </div>
+    <div class="grid">
+        <div></div>
+        <div><a class="button" href="/pages/services.html">Learn more</a></div>
+        <div></div>
     </div>
 </div>
-<div class="grid">
-    <div>
-        <h3 style="text-align: center;">An open source software consultancy, among other things.</h3>
+<div class="container-fluid clients">
+    <h3 class="sectiontitle">Some of our clients</h3>
+    <div class="container">
+        <div class="grid">
+            <div class="client-logo"><img src="static/img/logo_hapimag.png" alt="Hapimag logo" /></div>
+            <div class="client-logo"><img src="static/img/logo_martitor.png" alt="Marti Tor logo" /></div>
+            <div class="client-logo"><img src="static/img/logo_spa_planeamento.png" alt="SPA Planeamento logo" /></div>
+            <div class="client-logo"><img src="static/img/logo_glorialedo.png" alt="Gloria Ledo logo" /></div>
+        </div>
     </div>
 </div>
-<script>
-    setActiveMenu(document.querySelector('a#home'));
-</script>
+<div class="container-fluid news">
+    <h3 class="sectiontitle">News</h3>
+    <div class="container">
+        <div class="grid">
+            <div>
+                <article>
+                    <header><img src="static/img/logo_pycones2024.png" /></header>
+                    <span class="post-date">April 1st, 2024</span>
+                    <h3>PyConES 2024</h3>
+                    We've become proud sponsors of the PyConES 2024, this year we'll put all our efforts into the biggest spanish python conference. Come visit us at our booth!
+                </article>
+            </div>
+            <div>
+                <article>
+                    <header><img src="static/img/logo_devfest_2024_header.png" /></header>
+                    <span class="post-date">July 4th, 2024</span>
+                    <h3>Sponsoring GDC DevFest Santiago</h3>
+                    This year we are sponsoring the Google Developers Conference DevFest in University of Santiago de Compostela! Come visit us!
+                </article>
+            </div>
+            <div>
+                <article>
+                    <header><img src="static/img/logo_codeberg_header.png" /></header>
+                    <span class="post-date">July 20th, 2023</span>
+                    <h3>Codeberg members</h3>
+                    We have pledged monetary support for Codeberg e.V. and their mission to build a quality european code forge that respects privacy and freedom
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

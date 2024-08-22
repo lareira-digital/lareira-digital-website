@@ -1,42 +1,57 @@
-{% extends "_base.html" %}
-{% block content %}
+{% extends "_base.html" %} {% block content %}
 <!-- <div class="grid">
     <div>
         <a href="/index.html"><img src="/static/img/group.png" alt="https://www.flaticon.com/free-icons/group" class="reversible pagelogo" /></a>
     </div>
-    <div>
+    <div>```
         <small class="imgdesc">icon by Leremy, <a href="https://www.flaticon.com/authors/leremy">FlatIcons</a></small>
     </div>
 </div> -->
 <div class="grid">
     <div class="container-fluid">
         <h1 class="hello">Lareira Digital / <strong>About</strong></h1>
-        <h2 class="shortdesc">The story (as short as it is) from then to now.</h2>
+        <h2 class="shortdesc">
+            The story (as short as it is) from then to now.
+        </h2>
     </div>
 </div>
 <div class="container-fluid maincontent">
     <div class="container">
-        <p>Lareira Digital was funded by <a href="https://www.linkedin.com/in/oscarcarballal" target="_blank">Oscar Carballal Prego</a>
-            on April 2022 with the idea of being an open source agency (ideally a free sofware one) that would promote
-            and strengthen the open source and free software position not only in Spain but also in Europe. The idea
-            was to have two sides of the coin. One, a corporate side that would put the vast years of experience to
-            help other businesses and second, allow a space for software and hardware research and pure innovation.</p>
-
-        <p>On the first few months of existence we already got our first client which enabled us to start delivering
-            on the first front (software agency). During the next months we were able to put back some of that effort
-            into our own projects, namely AVOA (IoT-Domotics) and Atuin (modular intranet) which try to tackle some
-            of the problems of the current convoluted tech stacks available.
+        <p>
+            Lareira Digital was funded by
+            <a href="https://www.linkedin.com/in/oscarcarballal" target="_blank"
+                >Oscar Carballal Prego</a
+            >
+            on April 2022 with the idea of being an open source agency (ideally
+            a free sofware one) that would promote and strengthen the open
+            source and free software position not only in Spain but also in
+            Europe. The idea was to have two sides of the coin. One, a corporate
+            side that would put the vast years of experience to help other
+            businesses and second, allow a space for software and hardware
+            research and pure innovation.
         </p>
 
-        <p>During that time we also engaged in other activites of public interest, for example videogame development,
-            supporting the Global Game Jam events alongside other efforts from the local community like LevelUP, MarinFest
-            and contributing back to organizations like Codeberg.
+        <p>
+            On the first few months of existence we already got our first client
+            which enabled us to start delivering on the first front (software
+            agency). During the next months we were able to put back some of
+            that effort into our own projects, namely AVOA (IoT-Domotics) and
+            Atuin (modular intranet) which try to tackle some of the problems of
+            the current convoluted tech stacks available.
+        </p>
+
+        <p>
+            During that time we also engaged in other activites of public
+            interest, for example videogame development, supporting the Global
+            Game Jam events alongside other efforts from the local community
+            like LevelUP, MarinFest and contributing back to organizations like
+            Codeberg.
         </p>
 
         <p>END OF LINE</p>
     </div>
 </div>
 <script>
-    setActiveMenu(document.querySelector('a#about'));
+    setActiveMenu(document.querySelector("a#about"));
 </script>
 {% endblock %}
