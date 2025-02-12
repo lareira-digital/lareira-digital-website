@@ -1,281 +1,105 @@
-:root {
-    --font-family: 'Sen', sans-serif;
-    /*--color: #483949;*/
-}
-
 html,
 body {
     font-family: 'Sen', sans-serif;
-    /* color: #483949; */
-    line-height: 1.85em;
-    font-size: 20px;
-    font-weight: 300;
-    background: #fafbfd;
+    background: url("/static/img/bg.png");
+    background-repeat: no-repeat;
+    background-position: top; 
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    /* --color: #483949; */
-    --font-weight: normal;
+/* Add top padding for stylization */
+.navbar {
+    padding-top: 30px;
+    --bs-navbar-nav-link-padding-x: 1.5rem;
 }
 
-b,
-strong {
-    font-weight: 600;
+/* Remove padding to the brand to center vertically */
+.navbar-brand {
+    padding: none;
 }
-
-i,
-em,
-cite {
-    font-style: italic;
-}
-
-.bgred {
-    background: #d52349;
-}
-
-.bggreen {
-    background: #16635A;
-}
-
-.bgblack {
-    background: #000;
-}
-
-/* Header */
-
-.logo {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.titletext {
-    font-size: 2rem;
-    color: #000;
-    font-weight: bold;
+.navbar-brandname {
     font-family: 'Open Sans';
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-nav li {
-    padding: 0 50px;
+.navbar-button-support {
+    background: #16635A;
+    color: #fff;
+    border-radius: 20px 0px 20px 20px;
+    padding: 10px 20px !important;
+    margin-left: 100px;
 }
 
-nav li>a {
+.nav-link {
+    color: #CCC;
+}
+
+.nav-link:hover {
+    color: #FFF;
+}
+
+.nav-link.active {
+    color: #FFF !important;
+    text-decoration-line: overline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+}
+
+.card {
+    border: 0px;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 30px 0px 30px 30px;
+    /* padding:20px 30px 30px 30px; */
+}
+
+.card:hover {
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+    background: #29323C;
+    transition: 0.3s;
+}
+
+.card:hover .card-title {
+    transition: 0.3s;
+    color: #EDEDED;
+}
+
+.card:hover .card-text {
+    transition: 0.3s;
+    color: #EDEDED;
+}
+
+.card-icon {
+    margin: 0 auto 15px auto;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    padding:25px 20px;
+    background: #EDEDED;
+    font-size: 2rem;
+    border-radius: 30px 0px 30px 30px;
+}
+
+.card-date {
+    text-align: center;
+    font-size: 0.9rem;
     color: #666;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
 }
-
-nav li>a:hover {
-    background: #16635A;
-    color: #FFF;
-}
-
-.content {
-    margin-top: -100px;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
-}
-
-.hero {
-    background: url("/static/img/hero.png");
-    background-repeat: repeat-y;
-    background-position: center center;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #AAA;
-}
-
-.hero::after {
-    border-bottom: 1px solid #333;
-}
-
-.banner {
-    margin: auto;
-    width: 650px;
+.card-title {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    color: #FFF;
-    padding: 40px 60px;
+    font-size: 1.4rem;
+    color: #3B566E;
 }
 
-.banner h3 {
-    font-weight: bold;
-    color: #FFF;
-    font-size: 2rem;
+.card-text {
+    color: #6F8BA4;
 }
 
-.banner p {
-    color: #FFF;
-    font-size: 1.5rem;
-    font-family: 'Open Sans';
-}
-
-.services {
-    margin-top: 130px;
-}
-
-.services a {
-    display: block;
-    text-align: center;
-}
-
-.service {
-    text-align: center;
-}
-
-.service i {
-    font-size: 6rem;
-    color: #fff;
-    padding: 30px;
-    -webkit-border-top-left-radius: 15px;
-    -webkit-border-top-right-radius: 15px;
-    -moz-border-radius-topleft: 15px;
-    -moz-border-radius-topright: 15px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.service i::after {
-    content: '';
-    position: absolute;
-    border-top: solid 50px #d52349;
-    border-left: solid 115px transparent;
-    border-right: solid 115px transparent;
-    margin-left: -199px;
-    margin-top: 163px;
-}
-
-.service i.bggreen::after {
-    border-top: solid 50px #16635A;
-}
-
-.service i.bgblack::after {
-    border-top: solid 50px #000;
-}
-
-.service h3 {
-    margin-top: 130px;
-    font-weight: bold;
-}
-
-.service p {
-    margin-top: 10px;
-    padding: 0px 15px 0 15px;
-}
-
-.button {
-    margin: auto;
-    padding: 15px 40px;
-    background: #666;
-    color: #fff;
-    font-size: 1.5rem;
-    font-family: "Sen";
-    border-radius: 15px;
-}
-
-.clients {
-    background: #f2f2f2;
-    border-top: 1px solid #CCC;
-    border-bottom: 1px solid #CCC;
-    margin-top: 50px;
-    padding-bottom: 50px;
-}
-
-.sectiontitle {
-    text-align: center;
-    font-weight: bold;
-    padding: 50px;
-    margin-bottom: 0px;
-}
-
-.client-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.client-logo img {
-    margin: auto;
-    max-width: 200px;
-    max-height: 150px;
-}
-
-article {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    text-align: left;
-    padding-bottom: 20px;
-}
-
-.post-date {
-    font-weight: bold;
-}
-
-article>header {
-    padding: 0;
-    margin-bottom: 0;
-    border-bottom: none;
-    background: none;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-article>header img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-article h3 {
-    margin-bottom: 22px;
-}
-
-footer {
-    background: rgba(0, 0, 0, 1);
-    padding: 20px 20px 0px 20px !important;
-    margin-bottom: 0px;
-    color: #FFF !important;
-}
-
-.footerlogo {
-    padding: 0px 50px 0px 50px;
-    max-width: 300px;
-    max-height: 300px;
-}
-
-.footericon {
-    height: 30px;
-    width: 30px;
-    margin: 10px;
-    color: #FFF !important;
-    filter: invert(1);
-}
-
-.serviceimage {
-    display: block;
-    margin: auto;
-    max-width: 50%;
-}
-
-.grid {
-    padding: 50px 0px 50px 0px;
-}
-
-.nopadding {
-    padding: 0 !important;
-}
-
-.post-title {
-    margin: 50px 0px 0px 0px;
-    font-weight: bold;
+.client-list {
+    display: inline-flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
 }

@@ -1,101 +1,340 @@
 <!doctype html>
-<html lang="en" data-theme="light" style="min-height:100%;position:relative;">
-<!-- Hi curious person! We're happy that you're interested in this website -->
-<!-- feel free to visit us on our Codeberg page: https://codeberg.org/lareira-digital -->
-<!-- where you can also find the source code for this site. -->
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lareira Digital</title>
+        <meta name="author" content="Lareira Digital">
+        <meta name="description" content="Lareira Digital is a open source consultancy focused on long-term projects and support for enterprise.">
+        <meta name="keywords" content="open source, consultancy, enterprise, support, long-term, linux, osi, oci, cloud, free software, lareira digital, rest, api, python, rust, iot">
 
-<head>
-    <meta charset=" utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lareira Digital</title>
-    <meta name="description" content="Lareira Digital is a software development company focused on open source and open standards.">
-    <meta name="author" content="Lareira Digital">
-    <meta property="og:title" content="Lareira Digital">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lareira.digital/">
-    <meta property="og:description" content="Lareira Digital is a software development company focused on open source and open standards.">
-    <meta property="og:image" content="/static/img/lareira-logo.png">
-    <link rel="icon" type="image/png" href="/static/img/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sen:wght@400..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/fonts/sourcesans.css">
-    <link rel="stylesheet" href="/static/css/reset.css">
-    <link rel="stylesheet" href="/static/css/pico.min.css">
-    <link rel="stylesheet" href="/static/css/lareira.css">
-    <link rel="stylesheet" href="/static/css/style.css">
-    <script src="/static/js/app.js" async></script>
-</head>
+        <meta property="og:site_name" content="Lareira Digital">
+        <meta property="og:title" content="Lareira Digital - Open Source Consultancy">
+        <meta property="og:description" content="Lareira Digital is a open source consultancy focused on long-term projects and support for enterprise.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://lareira.digital">
+        <meta property="og:image" content="https://lareira.digital/static/img/logoLareiraFullWhite700.png">
+        <meta property="og:logo" content="https://lareira.digital/static/img/logoLareiraIconWhite700.png">
 
-<body>
-    <header class="container">
-        <section class="logo">
-            <span class="titletext">Lareira</span>
-            <img src="/static/img/logo_lareira.png" style="width:90px;vertical-align: middle;margin: -25px 15px 0px 15px;" class="reversible" />
-            <span class="titletext">Digital</span>
-        </section>
-        <nav>
-            <ul>
-                <li></li>
-            </ul>
-            <ul>
-                <li><a id="home" href="/">Home</a></li>
-                <li><a id="services" href="/pages/services.html">Services</a></li>
-                <li><a id="news" href="/pages/news.html">News</a></li>
-                <li><a id="about" href="/pages/about.html">About</a></li>
-                <li><a id="kit-digital" href="/pages/kit-digital.html">Kit digital</a></li>
-                <!-- <li>
-                    <details role="list" dir="rtl">
-                        <summary aria-haspopup="listbox" role="link"><img src="/static/img/lang_en-US.png"></summary>
-                        <ul role="listbox">
-                            <li><a><img class="flag" src="/static/img/lang_en-US.png">English</a></li>
-                            <li><a><img class="flag" src="/static/img/lang_es-ES.png">Español</a></li>
-                            <li><a><img class="flag" src="/static/img/lang_gl-GL.png">Galego</a></li>
-                            <li><a><img class="flag" src="/static/img/lang_de-CH.png">Swiss</a></li>
-                        </ul>
-                    </details>
-                </li> -->
-                <!-- <li><button class="theme-switcher" data-tooltip="Turn on dark mode" data-placement="bottom" onclick="toggle(this)">🌓</button></li> -->
-            </ul>
-            <ul>
-                <li></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="container-fluid content">
-        {% block content %}{% endblock %}
-    </main>
-    <footer class="container-fluid">
-        <div class="grid">
-            <div><img class="footerlogo" src="/static/img/lareira-logo-full-white.png" /></div>
-            <div></div>
-            <div></div>
-            <div>
-                <h6>Contact</h6>
-                <address>
-                    <a href="/pages/about.html">About us</a><br>
-                    <a href="https://www.linkedin.com/company/lareira-digital">Careers</a><br>
-                    <a href="/downloads/20230716-lareiradigital-presskit.zip">Press kit</a><br>
-                    Phone: +34 682 702 330<br>
-                    Email: <a href="javascript:location='mailto:\u0069\u006e\u0066\u006f\u0040\u006c\u0061\u0072\u0065\u0069\u0072\u0061\u002e\u0064\u0069\u0067\u0069\u0074\u0061\u006c';void 0">info{at}lareira.digital</a><br>
-                    <a href="https://codeberg.org/lareira-digital" data-tooltip="Codeberg" data-placement="top">
-                        <img src="/static/img/logo_codeberg.svg" class="footericon">
-                    </a>
-                    <a href="https://twitter.com/lareiradigital" data-tooltip="Twitter" data-placement="top">
-                        <img src="/static/img/logo_twitter.svg" class="footericon">
-                    </a>
-                    <a href="https://floss.social/@lareiradigital" data-tooltip="Mastodon" data-placement="top">
-                        <img src="/static/img/logo_mastodon.svg" class="footericon">
-                    </a>
-                    <a href="https://matrix.to/#/#lareira-digispace:matrix.org" data-tooltip="Matrix" data-placement="top">
-                        <img src="/static/img/logo_matrix.svg" class="footericon">
-                    </a>
-                </address>
+        <link rel="icon" href="/static/img/favicon.png" sizes="any">
+        <link rel="icon" href="/static/img/favicon.png" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/static/img/favicon.png">
+
+        <link rel="manifest" href="site.webmanifest">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="container">
+                <!-- NAV -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand navbar-brandname" href="#">
+                            <img src="/static/img/logoLareiraIconTransparent700.png" alt="Logo" width="32" height="32" class="d-inline-block align-text-top">
+                            Lareira Digital
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="d-flex">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">News</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About</a>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link navbar-button-support" href="#">Support</a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- END NAV -->
+
+                <!-- HERO -->
+                <div class="row justify-content-end" style="margin-top: 200px;">
+                    <div class="col-10">
+                        <div id="carouselHero" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                                <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+                            </div>
+                            <div class="carousel-inner active">
+                                <div class="carousel-item" style="height:150px;">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Open core</h5>
+                                        <p>We are open source, it will benefit us all</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" style="height:150px;">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Industry leading standards</h5>
+                                        <p>We are at the top of the wave in standards usage and definition.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" style="height:150px;">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Enterprise expertise</h5>
+                                        <p>We have over 20 years of experience in software, we know enterprise needs</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- END HERO -->
+
+                <!-- SERVICES -->
+                <div class="row justify-content-center" style="margin-top: 150px;">
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-icon"><i class="bi-code-slash"></i></h5>
+                                <h5 class="card-title">Software development</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-icon"><i class="bi-hdd-rack-fill"></i></h5>
+                                <h5 class="card-title">DevSecOps</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-icon"><i class="bi-cpu-fill"></i></h5>
+                                <h5 class="card-title">IoT</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-icon"><i class="bi-card-checklist"></i></h5>
+                                <h5 class="card-title">Consulting</h5>
+                                <p class="card-text">No need to use our services if you don't want to, but we can still guide you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SERVICES -->
             </div>
-        </div>
-    </footer>
 
-</body>
+            <!-- SERVICES 1 -->
+            <div class="row" style="margin-top:75px;background:#F7FAFD;padding:30px 0px 30px 0px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col-6">
+                            <h2>Software Development Services</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="row">
+                                <div class="col-3">
+                                    <h5><span class="badge text-bg-secondary">FastAPI</span></h5>
+                                    <h5><span class="badge text-bg-secondary">Django</span></h5>
+                                    <h5><span class="badge text-bg-secondary">Python</span></h5>
+                                    <h5><span class="badge text-bg-secondary">Rust</span></h5>
+                                    <h5><span class="badge text-bg-secondary">MySQL</span></h5>
+                                </div>
+                                <div class="col-3">
+                                    <h5><span class="badge text-bg-secondary">PostgreSQL</span></h5>
+                                    <h5><span class="badge text-bg-secondary">Cassandra</span></h5>
+                                    <h5><span class="badge text-bg-secondary">Neo4J</span></h5>
+                                    <h5><span class="badge text-bg-secondary">DDD</span></h5>
+                                    <h5><span class="badge text-bg-secondary">MongoDB</span></h5>
+                                </div>
+                                <div class="col-6">
+                                    <img src="/static/img/software-dev.png" alt="Programming" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END SERVICES 1 -->
+
+            <!-- SERVICES 2 -->
+            <div class="row" style="margin-top:30px;padding:30px 0px 30px 0px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col-6">
+                            <h2>DevOps & SecOps</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="/static/img/cloud-network-security.png" alt="DevSecOps" class="img-fluid">
+                                </div>
+                                <div class="col-3">
+                                    <h5><span class="badge text-bg-secondary">AWS</span></h5>
+                                    <h5><span class="badge text-bg-secondary">Google Cloud</span></h5>
+                                    <h5><span class="badge text-bg-secondary">IBM Cloud</span></h5>
+                                    <h5><span class="badge text-bg-secondary">Hetzner</span></h5>
+                                    <h5><span class="badge text-bg-secondary">Kubernetes</span></h5>
+                                </div>
+                                <div class="col-3">
+                                    <h5><span class="badge text-bg-secondary">Docker</span></h5>
+                                    <h5><span class="badge text-bg-secondary">High Availability</span></h5>
+                                    <h5><span class="badge text-bg-secondary">Threat intelligence</span></h5>
+                                    <h5><span class="badge text-bg-secondary">Security training</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END SERVICES 2 -->
+
+            <!-- CLIENTS -->
+            <div class="row" style="margin-top:75px;background:#F7FAFD;padding:30px 0px 30px 0px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col-6">
+                            <div class="client-list">
+                                <img src="static/img/logo_hapimag.png" alt="Hapimag logo" />
+                                <img src="static/img/logo_martitor.png" alt="Marti Tor logo" />
+                                <img src="static/img/logo_spa_planeamento.png" alt="SPA Planeamento logo" />
+                                <img src="static/img/logo_glorialedo.png" alt="Gloria Ledo logo" />
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END CLIENTS -->
+
+            <!-- NEWS -->
+            <div class="row" style="margin-top:30px;padding:30px 0px 30px 0px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col-6">
+                            <h2 style="text-align:center;">Latest news</h2>
+                            <p style="text-align:center;">Get the latest updates of what we are working on!</p>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="/static/img/news/ggj2025.png">
+                                        <div class="card-body">
+                                            <h5 class="card-date">January 1st, 2025</h5>
+                                            <h5 class="card-title">Global Game Jam 2025</h5>
+                                            <p class="card-text">One more year we help our local Global Game Jam site! Don't miss it!</p>
+                                            <a href="#" class="btn btn-primary">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="/static/img/news/logo_pycones2024.png">
+                                        <div class="card-body">
+                                            <h5 class="card-date">April 15th, 2025</h5>
+                                            <h5 class="card-title">PyConES 2024</h5>
+                                            <p class="card-text">We've become produ sponsors of the 2024 edition of the PyConES!</p>
+                                            <a href="#" class="btn btn-primary">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="/static/img/news/logo_pycones2024.png">
+                                        <div class="card-body">
+                                            <h5 class="card-date">April 15th, 2025</h5>
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top" src="/static/img/news/logo_pycones2024.png">
+                                        <div class="card-body">
+                                            <h5 class="card-date">April 15th, 2025</h5>
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END NEWS -->
+
+            <!-- FOOTER -->
+            <div class="row" style="margin-top:75px;background:#F7FAFD;padding:30px 0px 30px 0px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="/static/img/logoLareiraFullBlackTransparent700.png" style="max-width:200px;" alt="Programming">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                                <div class="col-2">
+                                </div>
+                                <div class="col-2">
+                                    <h5>Contact Us</h5>
+                                    <p>Santa Teresa de Jesus Jornet</p>
+                                    <p>36002, Pontevedra, Spain</p>
+                                    <p>Phone: +34 682 702 330</p>
+                                    <p>Email: info@lareira.digital</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END FOOTER -->
+        </div>
+
+        <script src="/static/js/bootstrap.bundle.min.js" async></script>
+        <script src="/static/js/site.js" async></script>
+    </body>
 
 </html>
