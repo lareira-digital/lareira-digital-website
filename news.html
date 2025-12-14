@@ -188,8 +188,15 @@
             </a>
         </div>
 
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <!-- Navigation Menu -->
-        <nav class="mb-20">
+        <nav class="desktop-nav mb-20">
             <ul class="flex space-x-8 text-lg">
                 <li>
                     <a
@@ -201,10 +208,26 @@
                 </li>
                 <li>
                     <a
-                        href="projects.html"
+                        href="case-studies.html"
                         class="text-gray-800 hover:text-gray-500 transition-colors pb-1"
                     >
-                        Projects
+                        Case Studies
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="products.html"
+                        class="text-gray-800 hover:text-gray-500 transition-colors pb-1"
+                    >
+                        Products
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="opensource.html"
+                        class="text-gray-800 hover:text-gray-500 transition-colors pb-1"
+                    >
+                        Open Source
                     </a>
                 </li>
                 <li>
@@ -226,12 +249,110 @@
             </ul>
         </nav>
 
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="opensource.html">Open Source</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </div>
+
         <!-- News Content -->
         <div class="max-w-4xl mx-auto px-6 mb-20">
             <h1 class="text-5xl font-bold mb-16 text-center">News</h1>
 
             <!-- Articles -->
             <div class="space-y-12">
+                <!-- Article: HabitatView Launch -->
+                <article class="border-l-4 border-gray-800 pl-6">
+                    <time class="text-sm text-gray-500 uppercase tracking-wide"
+                        >December 2025</time
+                    >
+                    <h2 class="text-2xl font-bold mt-2 mb-4">
+                        Introducing HabitatView: Smart Building Visualization for Everyone
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        We're excited to release HabitatView, a cross-platform desktop
+                        application that combines vector drawing tools with live sensor
+                        monitoring. Create interactive floor plans using precision tools
+                        like bezier curves and polygons, then connect 10+ sensor types via
+                        Home Assistant or any HTTP endpoint to visualize temperature,
+                        humidity, CO2, and power consumption in real-time. Available now
+                        for Windows and Linux (macOS coming soon), HabitatView is currently
+                        free during beta. Post-launch pricing will be a one-time €20
+                        payment per major version—no subscriptions. Perfect for smart
+                        homes, offices, data centers, and warehouses. Get started at
+                        <a href="https://habitatview.app" class="underline hover:text-gray-500">habitatview.app</a>.
+                    </p>
+                </article>
+
+                <!-- Article: Calculadora de Salarios -->
+                <article class="border-l-4 border-gray-800 pl-6">
+                    <time class="text-sm text-gray-500 uppercase tracking-wide"
+                        >December 2025</time
+                    >
+                    <h2 class="text-2xl font-bold mt-2 mb-4">
+                        Launching Calculadora de Salarios: Free Open Source Salary Calculator for Spain
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        We're excited to announce the release of Calculadora de Salarios,
+                        a free and open source tool for calculating net salaries in Spain.
+                        The calculator supports over 11 collective bargaining agreements
+                        (including TIC, Hostelería, Metal, and more), all 17 autonomous
+                        communities with their regional tax rates, and is available in 14
+                        languages. Built entirely with vanilla JavaScript, the tool runs
+                        100% client-side ensuring complete privacy. Visit
+                        <a href="https://calculadorasalario.es" class="underline hover:text-gray-500">calculadorasalario.es</a>
+                        to try it out.
+                    </p>
+                </article>
+
+                <!-- Article: Resonote Launch -->
+                <article class="border-l-4 border-gray-800 pl-6">
+                    <time class="text-sm text-gray-500 uppercase tracking-wide"
+                        >November 2025</time
+                    >
+                    <h2 class="text-2xl font-bold mt-2 mb-4">
+                        Introducing Resonote: Your Daily Music Resonance Journal
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        We've launched Resonote, a new Android app for music lovers who
+                        want to capture and remember the songs that move them. Share music
+                        directly from Spotify, YouTube Music, or SoundCloud, add personal
+                        notes about why each track resonates with you, and explore your
+                        musical journey through a calendar view. Resonote automatically
+                        fetches track metadata and artwork, making it easy to build your
+                        personal music journal. Learn more at
+                        <a href="https://resonote.eu" class="underline hover:text-gray-500">resonote.eu</a>.
+                    </p>
+                </article>
+
+                <!-- Article: WorkStamp Launch -->
+                <article class="border-l-4 border-gray-800 pl-6">
+                    <time class="text-sm text-gray-500 uppercase tracking-wide"
+                        >November 2025</time
+                    >
+                    <h2 class="text-2xl font-bold mt-2 mb-4">
+                        WorkStamp: Employee Time Tracking for Spanish Labor Law Compliance
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Lareira Digital has released WorkStamp, an employee time tracking
+                        system designed specifically for compliance with Spanish labor
+                        regulations (Real Decreto-ley 8/2019). The platform features a
+                        native Android app for simple clock in/out functionality, schedule
+                        management, multi-company support, and exportable reports. With
+                        role-based access control for employees, company admins, and super
+                        admins, WorkStamp provides a complete solution for workforce time
+                        management. Visit
+                        <a href="https://workstamp.eu" class="underline hover:text-gray-500">workstamp.eu</a>
+                        for more information.
+                    </p>
+                </article>
+
                 <!-- Article 1: DECODEX Partnership -->
                 <article class="border-l-4 border-gray-800 pl-6">
                     <time class="text-sm text-gray-500 uppercase tracking-wide"
@@ -322,5 +443,6 @@
         <footer class="mt-20 mb-8 text-center text-gray-500">
             <p>&copy; 2025 Lareira Digital S.L. All rights reserved.</p>
         </footer>
+        <script src="js/nav.js"></script>
     </body>
 </html>

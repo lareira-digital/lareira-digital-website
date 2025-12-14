@@ -194,8 +194,15 @@
                 </a>
             </div>
 
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <!-- Navigation Menu -->
-            <nav class="mb-8">
+            <nav class="desktop-nav mb-8">
                 <ul class="flex space-x-8 text-lg">
                     <li>
                         <a
@@ -207,10 +214,26 @@
                     </li>
                     <li>
                         <a
-                            href="projects.html"
+                            href="case-studies.html"
                             class="text-gray-800 hover:text-gray-500 transition-colors"
                         >
-                            Projects
+                            Case Studies
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="products.html"
+                            class="text-gray-800 hover:text-gray-500 transition-colors"
+                        >
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="opensource.html"
+                            class="text-gray-800 hover:text-gray-500 transition-colors"
+                        >
+                            Open Source
                         </a>
                     </li>
                     <li>
@@ -231,6 +254,18 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="opensource.html">Open Source</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul>
+            </div>
         </header>
 
         <!-- Main Content - Centered Vertically -->
@@ -255,5 +290,6 @@
             <p>&copy; 2025 Lareira Digital S.L. All rights reserved.</p>
         </footer>
         <script src="js/site.js"></script>
+        <script src="js/nav.js"></script>
     </body>
 </html>
