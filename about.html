@@ -44,20 +44,21 @@
             content="https://lareira.digital/images/twitter-image.jpg" />
 
         <!-- Favicon -->
+        <link rel="icon" href="favicon.ico" sizes="any" />
         <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/favicon-32x32.png" />
+            href="favicon-32x32.png" />
         <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="/favicon-16x16.png" />
+            href="favicon-16x16.png" />
         <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/apple-touch-icon.png" />
+            href="apple-touch-icon.png" />
 
         <!-- Canonical URL -->
         <link rel="canonical" href="https://lareira.digital/about.html" />
@@ -124,7 +125,8 @@
         }
         </script>
     </head>
-    <body class="min-h-screen flex flex-col items-center pt-5">
+    <body class="min-h-screen flex flex-col">
+        <header class="pt-5 flex flex-col items-center">
         <!-- Logo Section -->
         <div class="logo-container mb-12 text-center">
             <img
@@ -271,6 +273,7 @@
                 <li><a href="news.html">News</a></li>
             </ul>
         </div>
+        </header>
 
         <!-- About Us Content -->
         <div class="max-w-4xl mx-auto px-6">
@@ -396,7 +399,7 @@
             </div>
         </div>
 
-        <footer class="mt-20 mb-8 text-center text-gray-500">
+        <footer class="mt-8 mb-8 text-center text-gray-500">
             <p>&copy; 2026 <a href="mailto:info@lareira.digital">Lareira Digital</a> S.L. All rights reserved. | <a href="legal-warning.html" class="hover:text-gray-800 transition-colors">Legal Warning</a></p>
         </footer>
         <script src="js/nav.js"></script>
