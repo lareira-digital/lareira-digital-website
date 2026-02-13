@@ -14,13 +14,8 @@
             name="description"
             content="Stay updated with the latest news from Lareira Digital. Read about our partnerships, event participation, and upcoming initiatives in technology and innovation."
         />
-        <meta
-            name="keywords"
-            content="lareira digital news, technology updates, IoT partnerships, hackathons, PyConES, game jam, tech events"
-        />
         <meta name="author" content="Lareira Digital S.L." />
         <meta name="robots" content="index, follow" />
-        <meta name="language" content="English" />
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
@@ -92,6 +87,96 @@
             };
         </script>
         <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Lareira Digital",
+            "legalName": "Lareira Digital S.L.",
+            "url": "https://lareira.digital",
+            "logo": "https://lareira.digital/logo.png",
+            "sameAs": [
+                "https://www.linkedin.com/company/lareira-digital",
+                "https://twitter.com/lareiradigital",
+                "https://floss.social/@lareiradigital",
+                "https://bsky.app/profile/lareiradigital.bsky.social",
+                "https://github.com/lareira-digital"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "info@lareira.digital",
+                "contactType": "customer service"
+            }
+        }
+        </script>
+        <script type="application/ld+json">
+        [{
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Introducing HabitatView: Smart Building Visualization for Everyone",
+            "datePublished": "2025-12",
+            "author": { "@type": "Organization", "name": "Lareira Digital" },
+            "publisher": { "@type": "Organization", "name": "Lareira Digital", "logo": { "@type": "ImageObject", "url": "https://lareira.digital/logo.png" } }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Launching Calculadora de Salarios: Free Open Source Salary Calculator for Spain",
+            "datePublished": "2025-12",
+            "author": { "@type": "Organization", "name": "Lareira Digital" },
+            "publisher": { "@type": "Organization", "name": "Lareira Digital", "logo": { "@type": "ImageObject", "url": "https://lareira.digital/logo.png" } }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Introducing Resonote: Your Daily Music Resonance Journal",
+            "datePublished": "2025-11",
+            "author": { "@type": "Organization", "name": "Lareira Digital" },
+            "publisher": { "@type": "Organization", "name": "Lareira Digital", "logo": { "@type": "ImageObject", "url": "https://lareira.digital/logo.png" } }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "WorkStamp: Employee Time Tracking for Spanish Labor Law Compliance",
+            "datePublished": "2025-11",
+            "author": { "@type": "Organization", "name": "Lareira Digital" },
+            "publisher": { "@type": "Organization", "name": "Lareira Digital", "logo": { "@type": "ImageObject", "url": "https://lareira.digital/logo.png" } }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Partnership with DECODEX for IoT Predictive Maintenance Platform",
+            "datePublished": "2025-10",
+            "author": { "@type": "Organization", "name": "Lareira Digital" },
+            "publisher": { "@type": "Organization", "name": "Lareira Digital", "logo": { "@type": "ImageObject", "url": "https://lareira.digital/logo.png" } }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Participation in EuroCC2 AI Hackathon at CESGA",
+            "datePublished": "2025-10",
+            "author": { "@type": "Organization", "name": "Lareira Digital" },
+            "publisher": { "@type": "Organization", "name": "Lareira Digital", "logo": { "@type": "ImageObject", "url": "https://lareira.digital/logo.png" } }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Visit to PyConES 2025 in Seville",
+            "datePublished": "2025-10",
+            "author": { "@type": "Organization", "name": "Lareira Digital" },
+            "publisher": { "@type": "Organization", "name": "Lareira Digital", "logo": { "@type": "ImageObject", "url": "https://lareira.digital/logo.png" } }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Preparing for HobbyPont Global Game Jam 2026",
+            "datePublished": "2025-10",
+            "author": { "@type": "Organization", "name": "Lareira Digital" },
+            "publisher": { "@type": "Organization", "name": "Lareira Digital", "logo": { "@type": "ImageObject", "url": "https://lareira.digital/logo.png" } }
+        }]
+        </script>
     </head>
     <body class="min-h-screen flex flex-col items-center pt-5">
         <!-- Logo Section -->
@@ -99,6 +184,8 @@
             <img
                 src="logo.png"
                 alt="Lareira Digital Logo"
+                width="200"
+                height="200"
                 class="mx-auto"
                 style="max-height: 200px"
             />
@@ -269,7 +356,7 @@
             <div class="space-y-12">
                 <!-- Article: HabitatView Launch -->
                 <article class="border-l-4 border-gray-800 pl-6">
-                    <time class="text-sm text-gray-500 uppercase tracking-wide"
+                    <time class="text-sm text-gray-500 uppercase tracking-wide" datetime="2025-12"
                         >December 2025</time
                     >
                     <h2 class="text-2xl font-bold mt-2 mb-4">
@@ -292,7 +379,7 @@
 
                 <!-- Article: Calculadora de Salarios -->
                 <article class="border-l-4 border-gray-800 pl-6">
-                    <time class="text-sm text-gray-500 uppercase tracking-wide"
+                    <time class="text-sm text-gray-500 uppercase tracking-wide" datetime="2025-12"
                         >December 2025</time
                     >
                     <h2 class="text-2xl font-bold mt-2 mb-4">
@@ -313,7 +400,7 @@
 
                 <!-- Article: Resonote Launch -->
                 <article class="border-l-4 border-gray-800 pl-6">
-                    <time class="text-sm text-gray-500 uppercase tracking-wide"
+                    <time class="text-sm text-gray-500 uppercase tracking-wide" datetime="2025-11"
                         >November 2025</time
                     >
                     <h2 class="text-2xl font-bold mt-2 mb-4">
@@ -333,7 +420,7 @@
 
                 <!-- Article: WorkStamp Launch -->
                 <article class="border-l-4 border-gray-800 pl-6">
-                    <time class="text-sm text-gray-500 uppercase tracking-wide"
+                    <time class="text-sm text-gray-500 uppercase tracking-wide" datetime="2025-11"
                         >November 2025</time
                     >
                     <h2 class="text-2xl font-bold mt-2 mb-4">
@@ -355,7 +442,7 @@
 
                 <!-- Article 1: DECODEX Partnership -->
                 <article class="border-l-4 border-gray-800 pl-6">
-                    <time class="text-sm text-gray-500 uppercase tracking-wide"
+                    <time class="text-sm text-gray-500 uppercase tracking-wide" datetime="2025-10"
                         >October 2025</time
                     >
                     <h2 class="text-2xl font-bold mt-2 mb-4">
@@ -377,7 +464,7 @@
 
                 <!-- Article 2: EuroCC2 AI Hackathon -->
                 <article class="border-l-4 border-gray-800 pl-6">
-                    <time class="text-sm text-gray-500 uppercase tracking-wide"
+                    <time class="text-sm text-gray-500 uppercase tracking-wide" datetime="2025-10"
                         >October 2025</time
                     >
                     <h2 class="text-2xl font-bold mt-2 mb-4">
@@ -399,7 +486,7 @@
 
                 <!-- Article 3: PyConES 2025 -->
                 <article class="border-l-4 border-gray-800 pl-6">
-                    <time class="text-sm text-gray-500 uppercase tracking-wide"
+                    <time class="text-sm text-gray-500 uppercase tracking-wide" datetime="2025-10"
                         >October 2025</time
                     >
                     <h2 class="text-2xl font-bold mt-2 mb-4">
@@ -419,7 +506,7 @@
 
                 <!-- Article 4: Global Game Jam 2026 -->
                 <article class="border-l-4 border-gray-800 pl-6">
-                    <time class="text-sm text-gray-500 uppercase tracking-wide"
+                    <time class="text-sm text-gray-500 uppercase tracking-wide" datetime="2025-10"
                         >October 2025</time
                     >
                     <h2 class="text-2xl font-bold mt-2 mb-4">

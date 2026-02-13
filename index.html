@@ -16,14 +16,8 @@
             name="description"
             content="Expert technology solutions in software development, IoT, cybersecurity, cloud infrastructure, Linux systems, and open source technologies. Transform your business with innovative digital solutions."
         />
-        <meta
-            name="keywords"
-            content="software development, IoT solutions, cybersecurity, cloud computing, Linux, open source, training, technology consulting, digital transformation"
-        />
         <meta name="author" content="Lareira Digital S.L." />
         <meta name="robots" content="index, follow" />
-        <meta name="language" content="English" />
-        <meta name="revisit-after" content="7 days" />
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
@@ -96,6 +90,38 @@
         </script>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="js/jquery-3.7.1.min.js"></script>
+
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Lareira Digital",
+            "legalName": "Lareira Digital S.L.",
+            "url": "https://lareira.digital",
+            "logo": "https://lareira.digital/logo.png",
+            "sameAs": [
+                "https://www.linkedin.com/company/lareira-digital",
+                "https://twitter.com/lareiradigital",
+                "https://floss.social/@lareiradigital",
+                "https://bsky.app/profile/lareiradigital.bsky.social",
+                "https://github.com/lareira-digital"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "info@lareira.digital",
+                "contactType": "customer service"
+            }
+        }
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Lareira Digital",
+            "url": "https://lareira.digital"
+        }
+        </script>
     </head>
     <body class="min-h-screen flex flex-col">
         <!-- Header Section -->
@@ -105,6 +131,8 @@
                 <img
                     src="logo.png"
                     alt="Lareira Digital Logo"
+                    width="200"
+                    height="200"
                     class="mx-auto"
                     style="max-height: 200px"
                 />

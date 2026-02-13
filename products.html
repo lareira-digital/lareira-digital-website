@@ -12,12 +12,8 @@
         <meta
             name="description"
             content="Discover Lareira Digital's product lineup. From IoT home automation to productivity tools, explore our innovative software solutions built with passion and expertise." />
-        <meta
-            name="keywords"
-            content="software products, IoT, home automation, productivity tools, SaaS, Lareira Digital products" />
         <meta name="author" content="Lareira Digital S.L." />
         <meta name="robots" content="index, follow" />
-        <meta name="language" content="English" />
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
@@ -85,6 +81,30 @@
         </script>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="js/jquery-3.7.1.min.js"></script>
+
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Lareira Digital",
+            "legalName": "Lareira Digital S.L.",
+            "url": "https://lareira.digital",
+            "logo": "https://lareira.digital/logo.png",
+            "sameAs": [
+                "https://www.linkedin.com/company/lareira-digital",
+                "https://twitter.com/lareiradigital",
+                "https://floss.social/@lareiradigital",
+                "https://bsky.app/profile/lareiradigital.bsky.social",
+                "https://github.com/lareira-digital"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "info@lareira.digital",
+                "contactType": "customer service"
+            }
+        }
+        </script>
     </head>
     <body class="min-h-screen flex flex-col items-center pt-5">
         <!-- Logo Section -->
@@ -92,6 +112,8 @@
             <img
                 src="logo.png"
                 alt="Lareira Digital Logo"
+                width="200"
+                height="200"
                 class="mx-auto"
                 style="max-height: 200px" />
         </div>

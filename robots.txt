@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /projects.html
+
+Sitemap: https://lareira.digital/sitemap.xml
