@@ -1,0 +1,20 @@
+services:
+  website:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    restart: unless-stopped
+    # networks:
+    #   - ld-traefik-public
+    expose:
+      - "80"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.lareira-website.rule=Host(`lareira.digital`)"
+      - "traefik.http.routers.lareira-website.entrypoints=websecure"
+      - "traefik.http.routers.lareira-website.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.lareira-website.middlewares=security-headers@file,compress@file"
+      - "traefik.http.services.lareira-website.loadbalancer.server.port=80"
+# networks:
+#   ld-traefik-public:
+#     external: true
