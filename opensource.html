@@ -71,18 +71,7 @@
         <!-- Stylesheets -->
         <link rel="stylesheet" href="css/fonts.css" />
         <link rel="stylesheet" href="css/site.css" />
-        <script>
-            // Suppress Tailwind CDN warning
-            const originalWarn = console.warn;
-            console.warn = function (...args) {
-                if (args[0] && args[0].includes("cdn.tailwindcss.com")) {
-                    return;
-                }
-                originalWarn.apply(console, args);
-            };
-        </script>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="js/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="css/tailwind.css" />
 
         <!-- Structured Data -->
         <script type="application/ld+json">
