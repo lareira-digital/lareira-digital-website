@@ -1,5 +1,5 @@
 body {
-    background-color: #f5f5f0;
+    background-color: #f5f5f5;
     color: #2a2a2a;
     font-family: "Sen", sans-serif;
 }
@@ -81,11 +81,11 @@ main {
 }
 
 .social-icon:hover.twitter {
-    fill: #1DA1F2;
+    fill: #1da1f2;
 }
 
 .social-icon:hover.mastodon {
-    fill: #6364FF;
+    fill: #6364ff;
 }
 
 .social-icon:hover.bluesky {
